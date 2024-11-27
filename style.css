@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rebeccapurple;
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 92px;
+    background: rgba(255, 255, 255, 0.19);
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 78px;
+    padding-right: 78px;
+}
+.weather{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.sun{
+    width: 56px;
+    height: 45.057px;
+}
+.weatherPara{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.github{
+    display: flex;
+    gap: 20px;
+}
+.git{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.weather_div{
+    width: 450px;
+    height: 575px;
+    border-radius: 48px;
+    background: #000;
+    backdrop-filter: blur(16px);
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 61px;
+    padding-bottom: 61px;
+    justify-content: space-between;
+    
+    
+}
+.container{
+    display: flex;
+    gap: 43px;
+}
+
+.sun_loc{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.location{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.day{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.spin{
+    width: 87.5px;
+    height: 87.5px;
+    animation-name: spinning_sun;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spinning_sun {
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+        
+    } 
+}
+.cel{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.celsius{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 144px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.condition{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -30px;
+}
+.visibility_feel{
+    display: flex;
+    gap: 34px;
+    
+}
+.visibility{
+    display: flex;
+    gap: 8px;
+}
+.cond{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.four_cond{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.stick{
+    
+    color: #FFF;
+}
+.stick1{
+    color: white;
+    margin-left: 4px;
+}
+.eye{
+    width: 24px;
+    height: 24px;
+}
+.eyesight{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.feel{
+    display: flex;
+    gap: 8px;
+}
+.feel2{
+    display: flex;
+    gap: 8px;
+    margin-left: 18px;
+}
+.humidity_wind{
+    display: flex;
+    gap: 20px;
+}
